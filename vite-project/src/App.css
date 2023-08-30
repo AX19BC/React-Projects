@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**{
+  border: solid 1px red !important;
+}*/
+
+#main {
+  background-image: url(./Group.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: right 55%;
+
+}
+
+ul{
+  
+  color: white !important;
+  list-style-type: circle !important;
+  max-width: 450px !important;
+}
+
+ul > li{
+  padding-bottom: 20px !important;
+}
+
+li::marker{
+  color: #61DAFB;
+  font-size: 1,7em !important;
+}
