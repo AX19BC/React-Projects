@@ -1,8 +1,9 @@
 import React from 'react'; 
+import './Card.css';
 
 export default function Card (props){
     return (
-        <div className="pt-[4%] pl-[9%]">
+        <div id = "card" className="pt-[4%] pl-[9%] max-w-[300px] flex-col ">
             <div className="">
                 <div className="w-[300px]">
                     <img className="w-[300px] h-[400px]" src={`../public/${props.img}`}></img>

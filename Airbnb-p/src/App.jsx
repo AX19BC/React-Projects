@@ -12,7 +12,9 @@ import data from './data.jsx'
 function App() {
   
   const cards = data.map((card) => 
-    <Card img={card.coverImg}
+    <Card 
+          key={card.id}
+          img={card.coverImg}
           rating={card.stats.rating}
           reviewCount={card.stats.reviewCount}
           location={card.location}
@@ -25,7 +27,9 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      {cards}
+      <div className="w-[100%] space-x-3 flex pb-12">
+        {cards}
+      </div>
     </div>
   )
 }
