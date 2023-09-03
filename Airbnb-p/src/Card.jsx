@@ -14,13 +14,13 @@ export default function Card (props){
             {badgeText && <div className="absolute m-4 bg-white w-[90px] h-6 text-neutral-800 text-s font-normal leading-3 items-middle rounded-sm flex justify-center items-center"><b>{badgeText}</b></div>}
             <div className="">
                 <div className="w-[300px]">
-                    <img className="w-[300px] h-[400px]" src={`../public/${props.item.coverImg}`}></img>
+                    <img className="w-[300px] h-[400px]" src={`../public/${props.coverImg}`}></img>
                 </div>
                 <div className="flex">
                     <img className="pl-1"src="../public/Star 1.png"></img>
-                    <p className="pl-2">{props.item.stats.rating} ({props.item.stats.reviewCount})•{props.item.location}</p>
+                    <p className="pl-2">{props.stats.rating} ({props.stats.reviewCount})•{props.location}</p>
                 </div>
-                <p className="pl-1 pt-3 max-w-[300px]">Life lessons with Katie Zaferes <b>From ${props.item.price}</b> / person</p>
+                <p className="pl-1 pt-3 max-w-[300px]">Life lessons with Katie Zaferes <b>From ${props.price}</b> / person</p>
             </div>
         </div>
     )
