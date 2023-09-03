@@ -76,5 +76,5 @@ export default [
         },
         location: "Online",
         openSpots: 27,
-    }
+    } 
 ]
