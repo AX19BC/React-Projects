@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#nav {
+  position: relative;
+}
+
+#nav::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%; /* Adjust as needed */
+  background: linear-gradient(to top, rgb(255, 255, 255), transparent);
+  pointer-events: none; /* So the overlay doesn't interfere with clicks */
+}
