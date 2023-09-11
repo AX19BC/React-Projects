@@ -33,14 +33,14 @@ export default function Generator(props) {
     return(
         <div className="justify-center">
             <form className="flex justify-between space-x-4 items-center">
-                <input className="w-[100%] h-10 border-solid border-2 border-blue-900 rounded-md text-black" 
+                <input className="w-[100%] text-l p-3 font-bold h-10 border-solid border-2 border-blue-900 rounded-md text-black" 
                     type="text" 
                     placeholder="Shut up"
                     name="topText"
                     onChange={handleChange}
                     value={meme.topText}
                 ></input>
-                <input className="w-[100%] h-10 border-solid border-2 border-blue-900 rounded-md text-black"
+                <input className="w-[100%] h-10 text-l p-3 font-bold border-solid border-2 border-blue-900 rounded-md text-black"
                     type="text"
                     placeholder="And take my money"
                     name="bottomText"
@@ -60,9 +60,10 @@ export default function Generator(props) {
             <button  onClick={getMemeImage} id="nav" className="cursor-pointer font-karla text-md font-semibold w-[100%] mt-9 border-blue-900 rounded-md text-white bg-gradient-to-r from-slate-800 to-slate-700 p-2">Generate meme image!</button>
             <div className="flex flex-col justify-center items-center h-full relative p-[0px]">
                 <img className="p-[70px] w-[900px]" src={meme.randomImage} alt="Meme"></img>
-                <h1 id="memeText" className={`absolute top-0 ${style} text-[60px] border-5 border-black font-bold`}>{meme.topText}</h1>
-                <h1 id="memeText1" className={`absolute bottom-0 ${style} text-[60px] border-5 border-black font-bold`}>{meme.bottomText}</h1>
+                 <h1 id="memeText" className={`absolute top-10  ${style} text-[60px] border-5 border-black font-bold`}>{meme.topText}</h1>
+                <h1 id="memeText1" className={`absolute bottom-10  ${style} text-[60px] border-5 border-black font-bold`}>{meme.bottomText}</h1>
             </div>
+
 
         </div>
         
