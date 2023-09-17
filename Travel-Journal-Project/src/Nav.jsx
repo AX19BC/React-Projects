@@ -8,7 +8,7 @@ export default function Nav (){
         <div className="nav">
             <div id ="nav" className="Rectangle85 w-[100%] h-[130px] bg-gradient-to-br from-orange-400 via-amber-200 to-violet-300 flex justify-center items-center pb-6 space-x-4">
                 <img className="w-7" src={Logo} />
-                <p className="MyTravelJournal text-white text-4xl font-medium">My travel journal</p>
+                <p className="MyTravelJournal text-white text-4xl font-medium drop-shadow-4xl">My travel journal</p>
             </div>
             
         </div>
