@@ -58,10 +58,9 @@ function App() {
     <Die value={element.value} key= {element.id} hold={element.isHold} holdDice={() => holdDice(element.id)}/>)
 
   return (
-    <>
-      <div className="w-[100%] h-[auto] flex justify-center pt-[80px] bg-gradient-to-r from-zinc-700 to-indigo-900"> 
+      <div className="w-[100%] h-screen flex justify-center pt-[80px] bg-gradient-to-r from-zinc-700 to-indigo-900"> 
       {tenzies === true ? <Confetti width={window.innerWidth} height={window.innerHeight} /> : null}
-        <div className="min-h-[500px] w-[500px] bg-gray-100 rounded-xl p-[70px] pt-[70px]">
+        <div className="h-[500px] w-[500px] bg-gray-100 rounded-xl p-[70px] pt-[70px]">
 
             <div className="Titles pb-4">
                 <h1 className="text-4xl text-center pb-4 font-bold bg-gradient-to-r from-zinc-700 to-indigo-900 bg-clip-text text-transparent">Tenzies</h1>
@@ -78,7 +77,6 @@ function App() {
             </div>
         </div>
       </div>
-    </>
   )
 }
 
