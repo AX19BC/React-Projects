@@ -1,19 +1,23 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import FirstScreen from './firstScreen'
+import KvizScreen from './kvizScreen'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [screen, setScreen] = useState(true)
+
+  function switchScreen(){
+    setScreen(prevScreen => !prevScreen)
+  }
 
   return (
-    <>
       <div>
-        <h1 className="text-3xl font-bold underline">
-          Hello world!
-        </h1>
+        {screen === true 
+        ? <FirstScreen 
+          switchScreen={switchScreen}
+          /> 
+        : <KvizScreen />}
       </div>
-    </>
   )
 }
 
