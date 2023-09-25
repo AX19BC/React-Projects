@@ -1,10 +1,30 @@
 import React from 'react';
-import { useState } from 'react'
+import { useEffect } from 'react';
+import { useEfferct, useState } from 'react'
 import Question from './Question'
 
 export default function kvizScreen (props){
+
+    const [questionAPI, setquestionAPI] = useState()
+
+    const fetchQuestionData = () => {
+        fetch("https://opentdb.com/api.php?amount=5&difficulty=medium&type=multiple")
+        .then(response => {
+          return response.json()
+        })
+        .then(data => {
+            setquestionAPI(data)
+        })
+    }
+
+    useEffect(() =>{
+        fetchQuestionData()
+    }, [])
+    
+    console.log(questionAPI)
+    
     return(
-            <div className="bg-gradient-to-r from-indigo-200 to-violet-50 h-auto w-screen grid place-items-center">
+            <div className="bg-gradient-to-r from-indigo-200 to-violet-50 h-auto w-auto grid place-items-center ">
                 <Question />
                 <Question />
                 <Question />

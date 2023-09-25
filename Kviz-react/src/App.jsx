@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEfferct, useState } from 'react'
 import './App.css'
 import FirstScreen from './firstScreen'
 import KvizScreen from './kvizScreen'
