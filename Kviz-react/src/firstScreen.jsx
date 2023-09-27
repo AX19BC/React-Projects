@@ -2,6 +2,8 @@ import React from "react";
 import { useEfferct, useState } from 'react'
 
 export default function firstScreen(props){
+    const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+
     return(
         <div className="bg-gradient-to-r from-blue-800 to-indigo-900 h-screen w-screen flex justify-center items-center">
             <div className="min-h-[50%] min-w-[30%] m-[30px] bg-indigo-200 rounded-lg shadow-2xl grid place-items-center p-[50px] ">
